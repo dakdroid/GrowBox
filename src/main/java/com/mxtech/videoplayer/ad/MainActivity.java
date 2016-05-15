@@ -38,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
                 intent.putExtra("subs.enable",subsEnable);
             }
 
-            startActivity(intent);
+            startActivity(Intent.createChooser(intent, "Watch with"));
             finish();
         }
     }
